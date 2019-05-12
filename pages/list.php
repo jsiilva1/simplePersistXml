@@ -41,7 +41,7 @@
             <td><?php echo $client->maritalStatus;?></td>
             <td><?php echo $client->bloodType;?></td>
             <td>
-              <a href="" title="Editar"><i class="far fa-edit"></i></a> |
+              <a href='../src/edit.php?id=<?php echo $client->id;?>' title="Editar"><i class="far fa-edit"></i></a> |
               <a href='../src/delete.php?id=<?php echo $client->id;?>' title="Excluir"><i class="fas fa-trash-alt"></i></a>
             </td>
           </tr>

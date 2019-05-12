@@ -26,3 +26,8 @@ body {
 .menu-system-wrapper .card:hover {
     background-color: #f7fcf4;
 }
+
+.wrapper {
+  width: 450px;
+  margin: 0 auto 20px auto;
+}

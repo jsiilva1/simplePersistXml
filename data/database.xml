@@ -1,5 +1,16 @@
 <?xml version="1.0"?>
 <maincontent>
+  <cliente id="469200503">
+    <id>469200503</id>
+    <name>Junior Silva</name>
+    <email>jsiilva@outlook.com.br</email>
+    <phone>89994112266</phone>
+    <address>Rua Piaui, Paroquial</address>
+    <profession>Engenheiro de Software</profession>
+    <formation>Graduando</formation>
+    <maritalStatus/>
+    <bloodType>O</bloodType>
+  </cliente>
   <cliente id="511473950">
     <id>511473950</id>
     <name>Anatiel Santos</name>

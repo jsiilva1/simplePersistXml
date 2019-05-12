@@ -5,16 +5,14 @@
     <title>Inserir um novo cliente</title>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/main.css">
-    <style>
-      .wrapper {
-        width: 450px;
-        margin: 0 auto 20px auto;
-      }
-    </style>
   </head>
   <body>
 
     <div class="container">
+
+      <h1>Adicionar novo cliente</h1>
+
+      <hr>
 
       <div class="wrapper">
         <form action="../src/generate.php" method="POST">
