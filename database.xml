@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<maincontent>
+  <cliente id="560267901">
+    <name>Junior</name>
+    <email>jsiilva@outlook.com.br</email>
+    <available content=""/>
+  </cliente>
+  <cliente id="567668606">
+    <name>Junior</name>
+    <email>jsiilva@outlook.com.br</email>
+  </cliente>
+</maincontent>
