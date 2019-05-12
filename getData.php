@@ -5,11 +5,12 @@
     <title>Lista dos clientes</title>
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/css/all.min.css">
+    <link rel="stylesheet" href="./static/css/main.css">
   </head>
   <body>
 
     <div class="container-fluid">
-      <h1>Lista dos Clientes</h1>
+      <h1>Clientes</h1>
 
       <table class="table">
         <thead>

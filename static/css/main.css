@@ -1,0 +1,28 @@
+body {
+    background: #ecf0f1;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.menu-system-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.menu-system-wrapper .card {
+    width: 100px;
+    height: 120px;
+    margin: 5px;
+}
+
+.menu-system-wrapper .card-style:hover {
+    text-decoration: none;
+}
+
+.menu-system-wrapper .card:hover {
+    background-color: #f7fcf4;
+}
