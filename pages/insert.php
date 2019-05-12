@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Inserir um novo cliente</title>
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <style>
       .wrapper {
         width: 450px;
@@ -17,7 +17,7 @@
     <div class="container">
 
       <div class="wrapper">
-        <form action="./p-xml.php" method="POST">
+        <form action="../src/generate.php" method="POST">
           <div class="form-group">
             <label for="exampleInputEmail1">Nome</label>
             <input type="text" class="form-control" name="nome" placeholder="Digite seu nome">

@@ -11,7 +11,7 @@
     <div class="container">
 
         <div class="menu-system-wrapper">
-            <a href="/insert.php" class="card-style">
+            <a href="/pages/insert.php" class="card-style">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Adicionar cliente</h5>
@@ -20,7 +20,7 @@
                 </div>
             </a>
 
-            <a href="/getData.php" class="card-style">
+            <a href="/pages/list.php" class="card-style">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Ver todos os clientes</h5>

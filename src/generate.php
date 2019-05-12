@@ -14,14 +14,17 @@ $estado_civil = $_POST['estado_civil'] ?? null;
 $tipo_sanguineo = $_POST['tipo_sanguineo'] ?? null;
 
 // Traz o arquivo para a memória
-$file = file_get_contents('./database.xml');
+$file = file_get_contents('../data/database.xml');
 
 if($file) {
   $xmldoc->loadXML($file, LIBXML_NOBLANKS);
 
   $root = $xmldoc->getElementsByTagName('maincontent')->item(0);
 
-  $cliente = $xmldoc->createElement("cliente");
+  $cliente = $xmldoc->createElement('cliente');
+  $numAttribute = $xmldoc->createAttribute("id");
+  $numAttribute->value = $id;
+  $cliente->appendChild($numAttribute);
 
   $root->insertBefore($cliente, $root->firstChild);
 
@@ -79,7 +82,7 @@ if($file) {
   $bloodTypeText = $xmldoc->createTextNode($tipo_sanguineo);
   $bloodTypeElement->appendChild($bloodTypeText);
 
-  $xmldoc->save('./database.xml');
+  $xmldoc->save('../data/database.xml');
 
-  header('location: getData.php');
+  header('location: ../pages/list.php');
 }
