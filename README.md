@@ -7,16 +7,17 @@ Discente: Ivanicio Barros da Silva Junior
 
 ### Descrição
 
-Primeiro trabalho pratico para complemento da nota parcial da unidade 3 da disciplina de Banco de Dados II, do curso de Ciencia da Computacao da Faculdade RSa.
+Primeiro trabalho prático, para complemento da nota parcial da unidade 3, da disciplina de Banco de Dados II, do curso de Ciência da Computação da Faculdade R.Sá.
 
-A ideia é, basicamente, ter dados ficticios salvos em uma estrutura de marcacao; alem disso, o sistema deve permitir a exibicao desses dados em uma tabela estruturada, e realizar a edicao e remocao dos mesmos.
+A ideia é, basicamente, ter dados fictícios salvos em uma estrutura de marcação como o XML; alem disso, o sistema deve permitir a exibição desses dados em uma tabela estruturada, e permitir a edição e remoção dos mesmos.
 
 ### Informações
-  - Prazo de entrega e apresentação: 12/05/2019;
+  - Prazo de entrega: 12/05/2019;
   - Discente: Ivanicio Junior
+  - Trabalho 1/3;
 
 ### Instalação
-  1. Clonar o repositório para o diretório de um servidor Apache ou PHP 
+  1. Clonar o repositório para o diretório de um servidor Apache/Nginx ou PHP 
       - ``` git clone git@github.com:jsiilva1/simplePersistXml.git ```
 
 ### Requisitos
