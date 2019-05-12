@@ -7,7 +7,7 @@
     <phone>89994112266</phone>
     <address>Rua Piaui, Paroquial</address>
     <profession>Engenheiro de Software</profession>
-    <formation>Graduando</formation>
+    <formation>Superior Completo</formation>
     <maritalStatus>Solteiro(a)</maritalStatus>
     <bloodType>O</bloodType>
   </cliente>
@@ -19,7 +19,7 @@
     <address>&#xFEFF;BR 316 KM 302, 5</address>
     <profession>Professor/Programador</profession>
     <formation>P&#xF3;s graduado</formation>
-    <maritalStatus>Solteiro(a)</maritalStatus>
-    <bloodType>O-</bloodType>
+    <maritalStatus>Casado(a)</maritalStatus>
+    <bloodType>AB</bloodType>
   </cliente>
 </maincontent>
