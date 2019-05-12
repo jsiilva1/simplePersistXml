@@ -8,7 +8,7 @@
     <address>Rua Piaui, Paroquial</address>
     <profession>Engenheiro de Software</profession>
     <formation>Graduando</formation>
-    <maritalStatus/>
+    <maritalStatus>Solteiro(a)</maritalStatus>
     <bloodType>O</bloodType>
   </cliente>
   <cliente id="511473950">
@@ -19,7 +19,7 @@
     <address>&#xFEFF;BR 316 KM 302, 5</address>
     <profession>Professor/Programador</profession>
     <formation>P&#xF3;s graduado</formation>
-    <maritalStatus>Casado(a)</maritalStatus>
-    <bloodType>B</bloodType>
+    <maritalStatus>Solteiro(a)</maritalStatus>
+    <bloodType>O-</bloodType>
   </cliente>
 </maincontent>

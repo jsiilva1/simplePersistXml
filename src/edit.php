@@ -11,14 +11,6 @@ $target = $doc->xpath("//cliente[@id=$id]");
 if(!$target) return;
 
 $cliente = $target[0];
-
-/* Segmenta qual registro que será editado
-$nodeToEdit = null;
-foreach ($doc->children() as $element){
-  if ($element->id == $id) {
-    $nodeToEdit = $element;
-  }
-}*/
 ?>
 
 <?php
@@ -41,9 +33,6 @@ if (isset($_POST['edit'])) {
   $cliente->maritalStatus = $estado_civil;
   $cliente->bloodType = $tipo_sanguineo;
 
-  //$domRef = dom_import_simplexml($cliente);
-  // $domRef->parentNode->removeChild($domRef);
-
   // Após, salva o novo arquivo XML com a DOMDocument
   $dom = new DOMDocument('1.0');
   $dom->preserveWhiteSpace = false;
@@ -52,7 +41,7 @@ if (isset($_POST['edit'])) {
   $dom->loadXML($doc->asXML());
   $dom->save('../data/database.xml');
 
-  echo 'ok';
+  header('location: ../pages/list.php');
 }
 ?>
 
@@ -60,7 +49,7 @@ if (isset($_POST['edit'])) {
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Em edição - <?php echo $nodeToEdit->name?></title>
+    <title>Em edição - <?php echo $cliente->name?></title>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/all.min.css">
     <link rel="stylesheet" href="../static/css/main.css">
@@ -108,23 +97,21 @@ if (isset($_POST['edit'])) {
           <div class="form-group">
             <label for="exampleFormControlSelect2">Selecione seu estado civil</label>
             <select class="form-control" name="estado_civil">
-              <option disabled hidden selected><?php echo $cliente->maritalStatus;?></option>
-              <option value="Solteiro(a)">Solteiro(a)</option>
-              <option value="Casado(a)">Casado(a)</option>
-              <option value="Viúvo(a)">Viúvo(a)</option>
-              <option value="Enrolado">Enrolado</option>
+              <option <?php echo ($cliente->maritalStatus == 'Solteiro(a)') ? 'selected' : ''?> value="Solteiro(a)">Solteiro(a)</option>
+              <option <?php echo ($cliente->maritalStatus == 'Casado(a)') ? 'selected' : ''?> value="Casado(a)">Casado(a)</option>
+              <option <?php echo ($cliente->maritalStatus == 'Viúvo(a)') ? 'selected' : ''?> value="Viúvo(a)">Viúvo(a)</option>
+              <option <?php echo ($cliente->maritalStatus == 'Enrolado') ? 'selected' : ''?> value="Enrolado">Enrolado</option>
             </select>
           </div>
 
           <div class="form-group">
             <label for="exampleFormControlSelect2">Selecione seu tipo sanguíneo</label>
             <select class="form-control" name="tipo_sanguineo">
-              <option disabled hidden selected><?php echo $cliente->bloodType;?></option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="AB">AB</option>
-              <option value="O">O</option>
-              <option value="O">O-</option>
+              <option <?php echo ($cliente->bloodType == 'A') ? 'selected' : ''?> value="A">A</option>
+              <option <?php echo ($cliente->bloodType == 'B') ? 'selected' : ''?> value="B">B</option>
+              <option <?php echo ($cliente->bloodType == 'AB') ? 'selected' : ''?> value="AB">AB</option>
+              <option <?php echo ($cliente->bloodType == 'O') ? 'selected' : ''?> value="O">O</option>
+              <option <?php echo ($cliente->bloodType == 'O-') ? 'selected' : ''?> value="O-">O-</option>
             </select>
           </div>
 
